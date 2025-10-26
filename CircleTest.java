@@ -52,3 +52,4 @@ class Circle Test{
 		expectedhashCode = y*inHashcode;
 		assertEquals(expectedhashCode, c.hashCode());
 	}
+}
