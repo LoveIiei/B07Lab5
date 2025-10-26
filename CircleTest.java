@@ -8,7 +8,7 @@ class Circle Test{
 	void testRadiusStored(){
 		Circle c = new Circle(3.0);
 		assertEquals(3.0, c.radius);
-
+	}
 	@Test
 	void testEqualsSameObject() {
 		Circle c = new Circle(3.0);
