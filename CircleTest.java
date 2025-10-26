@@ -3,7 +3,7 @@ package lab5;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class Circle Test{
+class CircleTest{
 	@Test
 	void testRadiusStored(){
 		Circle c = new Circle(3.0);
@@ -18,7 +18,7 @@ class Circle Test{
 	@Test
 	void testEqualNull(){
 		Circle c = new Circle(4.0);
-		assertFalse(c.euqals(null));
+		assertFalse(c.equals(null));
 	}
 
 	@Test
@@ -49,7 +49,6 @@ class Circle Test{
 		int inHashCode = (int) (3.0 * 1000);
 		int x = 3 + (5*inHashCode + 7);
 		int y = x * inHashCode + 13;
-		expectedhashCode = y*inHashcode;
+		double expectedhashCode = y*inHashCode;
 		assertEquals(expectedhashCode, c.hashCode());
 	}
-}
