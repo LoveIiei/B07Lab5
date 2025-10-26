@@ -1,5 +1,4 @@
 package lab5;
-
 public class Rectangle {
 	double x;
 	double y;
@@ -29,6 +28,6 @@ public class Rectangle {
 		if (getClass() != obj.getClass())
 			return false;
 		Rectangle other = (Rectangle) obj;
-		return Double.Compare(this.x,  other.x) == 0.0 && Double.Compare(this.y,  other.y) == 0.0;
+		return Double.compare(this.x,  other.x) == 0.0 && Double.compare(this.y,  other.y) == 0.0;
 	}
 }
